@@ -1,0 +1,73 @@
+.aboutus__section {
+  .sub__para {
+    color: #cdd3e6;
+    font-size: 1.25rem;
+  }
+
+  .para {
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    &:last-child {
+      font-weight: normal;
+      color: #cdd3e6;
+    }
+  }
+}
+.capabilities__section {
+  margin-top: 120px;
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif;
+    font-size: 1.25rem;
+  }
+  .capabilities__button {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #1d1c1c;
+    color: #cdd3e6;
+    text-align: center;
+    padding: 18px 40px;
+    font-size: 16px;
+    width: auto;
+
+    @media only screen and (max-width: 768px) {
+      border-radius: 12px;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+  }
+}
+
+.myvalue__section {
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif;
+    font-size: 1.25rem;
+  }
+  .card {
+    border-radius: 1.25rem;
+    padding: 1rem;
+
+    p {
+      font-family: "Gelion", sans-serif;
+    }
+  }
+  .list__1 {
+    background: #85ffde;
+  }
+  .list__2 {
+    background: #ffdfa1;
+  }
+  .list__3 {
+    background: #cebdff;
+  }
+  .list__4 {
+    background: #ffb2ac;
+  }
+}

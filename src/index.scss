@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Roboto&display=swap");
+@import url("https://db.onlinewebfonts.com/c/288480b704b52173b642af77e54fc366?family=Gelion+Semi+Bold");
+
+@import "./styles/navbar.scss";
+@import "./styles/aboutUs.scss";
+@import "./styles/footer.scss";
+
+body {
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/BG.png");
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.text__gradient {
+  background: linear-gradient(
+    90deg,
+    #1a7ad3 20%,
+    #b16ce9 27.78%,
+    #e8628e 36.21%,
+    #f4751f 44.9%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

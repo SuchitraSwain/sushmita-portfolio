@@ -1,0 +1,26 @@
+.footer__section {
+  margin-bottom: 160px;
+  footer {
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 30, 22, 0.55) 0%,
+      rgba(44, 28, 50, 0.5) 59.9%
+    );
+  }
+  h1 {
+    font-size: 3.25rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "Gelion", sans-serif !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    h4 {
+      font-size: 16px;
+    }
+  }
+}
