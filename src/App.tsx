@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar";
 import "bootstrap/dist/js/bootstrap.bundle";
 import Footer from "./components/Footer";
+import Bookshelf from "./pages/Bookshelf";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/bookshelf" element={<Bookshelf />} />
       </Routes>
       <Footer />
     </BrowserRouter>

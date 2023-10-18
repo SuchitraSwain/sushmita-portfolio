@@ -71,7 +71,7 @@ const Navbar = () => {
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
-                        to="about-us"
+                        to="bookshelf"
                       >
                         BOOKSHELF
                       </Link>
