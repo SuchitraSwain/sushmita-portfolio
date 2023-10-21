@@ -4,15 +4,15 @@ const MyValues = () => {
   return (
     <section className="myvalue__section mt-5 pt-5">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
             <h3 className="text-light text-center fw-bold text-uppercase">
               MY VALUES
             </h3>
           </div>
         </div>
-        <div className="row mt-4">
-          <div className="col-md-6 mt-4">
+        <div className="row mt-4 justify-content-center">
+          <div className="col-md-5 mt-4">
             <div className="card list__1">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">💛 Passion is everything.</h4>
@@ -25,7 +25,7 @@ const MyValues = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-5 mt-4">
             <div className="card list__2">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">✍️ Never stop learning.</h4>
@@ -38,7 +38,7 @@ const MyValues = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-5 mt-4">
             <div className="card list__3">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">✊ Embrace the journey.</h4>
@@ -50,7 +50,7 @@ const MyValues = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-5 mt-4">
             <div className="card list__4">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">🙂 Be human.</h4>

@@ -1,0 +1,171 @@
+.interactve__floor__plan__section {
+  .p__gray {
+    color: #cdd3e6;
+    font-family: "Gelion", sans-serif !important;
+    font-size: 1.25rem;
+  }
+
+  .p__white {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .small {
+    color: #cdd3e6;
+    font-family: "Gelion", sans-serif !important;
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+  .card {
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: #1f1f22;
+  }
+
+  .floor__bg {
+    position: relative;
+  }
+  .banner__section {
+    background-image: url("../assets/floorBg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 80px 0px;
+    h1 {
+      font-family: "Gelion", sans-serif !important;
+      color: #fff;
+      font-size: 2.25rem;
+    }
+    p {
+      color: #cdd3e6;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+  }
+  h3 {
+    font-family: "Gelion", sans-serif !important;
+    color: #fff;
+    font-size: 2rem;
+  }
+  hr {
+    background: #cdd3e6;
+    height: 3px;
+    margin-top: 40px;
+  }
+
+  a {
+    color: #cdd3e6;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+
+  .second__section {
+    h4 {
+      color: #fff;
+      font-family: "Gelion", sans-serif !important;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: #cdd3e6;
+      font-family: "Gelion", sans-serif !important;
+      font-size: 1.25rem;
+    }
+  }
+
+  .challenge__section {
+    p {
+      font-family: "Gelion", sans-serif !important;
+      &:first-child {
+        color: #fff;
+        font-size: 1.25rem;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6) {
+        color: #cdd3e6;
+        font-size: 1.25rem;
+        line-height: 1.8;
+        font-weight: 400;
+      }
+    }
+
+    .card {
+      border-radius: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: linear-gradient(
+        90deg,
+        rgba(43, 30, 22, 0.55) 0%,
+        rgba(44, 28, 50, 0.5) 59.9%
+      );
+
+      p {
+        color: #cdd3e6;
+        font-size: 1.25rem;
+        line-height: 1.8;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .security__mean {
+    li {
+      color: #cdd3e6;
+      font-size: 1.25rem;
+      line-height: 1.8;
+      font-weight: 400;
+      font-family: "Gelion", sans-serif !important;
+    }
+  }
+
+  .competitive__analysis {
+    p {
+      color: #cdd3e6;
+      font-family: "Gelion", sans-serif !important;
+      font-size: 1.25rem;
+    }
+  }
+
+  .user__persona {
+    p {
+      color: #cdd3e6;
+      font-family: "Gelion", sans-serif !important;
+      font-size: 1.25rem;
+    }
+
+    .card {
+      ul {
+        list-style: number;
+        li {
+          color: #cdd3e6 !important;
+          font-size: 1rem;
+          line-height: 1.8;
+          font-weight: 400;
+          font-family: "Gelion", sans-serif !important;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        h3,
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .feature__floor {
+    h1 {
+      color: #525252;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .p__gray {
+      font-size: 1rem;
+    }
+  }
+}

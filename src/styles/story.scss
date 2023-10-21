@@ -1,0 +1,12 @@
+.story__section {
+  h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 12rem 0;
+
+    @media only screen and (max-width: 768px) {
+      padding: 5rem 0;
+    }
+  }
+}

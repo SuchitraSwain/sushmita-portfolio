@@ -1,0 +1,191 @@
+.work__section {
+  .work__tabs {
+    .nav-tabs {
+      border-bottom: none;
+      display: flex;
+      justify-content: center;
+      .nav-link {
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: #1d1c1c;
+        color: #cdd3e6;
+        font-size: 1.2rem;
+        font-family: "Gelion", sans-serif !important;
+        padding: 8px 2.5rem;
+        margin-right: 20px;
+      }
+
+      .active {
+        border: 1px solid #fff;
+        background: linear-gradient(
+          98deg,
+          #1a7ad3 5.8%,
+          #b16ce9 32.47%,
+          #e8628e 70.03%,
+          #f4751f 95.23%
+        );
+        padding: 8px 2.5rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+        padding: 10px 0;
+        .nav-link {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.case__study__section {
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.illustration__section {
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .long__img {
+    width: 49%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.shots__section {
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
+    text-align: center;
+  }
+  h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: "Gelion", sans-serif !important;
+  }
+}
+
+.modal {
+  .modal-content {
+    background-color: #d9d9d9 !important;
+  }
+
+  .modal-body,
+  .modal-header {
+    padding: 10px 40px;
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+    }
+  }
+}
+
+.interaction__section {
+  h3 {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
+    text-align: center;
+  }
+  h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: "Gelion", sans-serif !important;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+.fadeIn-right {
+  left: 80%;
+}

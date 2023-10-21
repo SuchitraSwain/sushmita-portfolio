@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <section className="navbar__section mt-3">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
@@ -44,7 +44,7 @@ const Navbar = () => {
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
-                        to="about-us"
+                        to="work"
                       >
                         WORK
                       </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
-                        to="about-us"
+                        to="timeline"
                       >
                         TIMELINE
                       </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
-                        to="about-us"
+                        to="story"
                       >
                         STORY
                       </Link>

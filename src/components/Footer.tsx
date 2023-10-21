@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <section className="footer__section mt-5 pt-5">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
             <footer>
               <div className="row justify-content-center">
-                <div className="col-md-12">
+                <div className="col-md-10">
                   <h1 className="fw-bold mt-5">
                     <span className="text__gradient">Reach</span>
                     <img
@@ -32,10 +32,10 @@ const Footer = () => {
                   </h1>
                 </div>
                 <div className="col-md-5 mt-4">
-                  <h3 className="text-light text-center">
+                  <h4 className="text-light text-center">
                     I&apos;m always love hearing new ideas and I&apos;m more
                     than happy to chat
-                  </h3>
+                  </h4>
                   <h4 className="text__gradient mt-4 mb-5 d-flex align-items-center justify-content-center">
                     <img
                       src={email}
@@ -48,11 +48,12 @@ const Footer = () => {
                 </div>
               </div>
             </footer>
-            <div className="col-md-12 mt-5 pt-5">
+            <div className="col-md-12 mt-5">
               <img
                 src={footer}
                 alt=""
-                className="img-fluid w-75 d-block mx-auto mt-5 pt-5"
+                className="img-fluid d-block mx-auto mt-5 pt-5"
+                width={600}
               />
             </div>
           </div>

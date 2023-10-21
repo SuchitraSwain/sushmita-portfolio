@@ -7,8 +7,8 @@ const AboutUs = () => {
   return (
     <section className="aboutus__section pt-5 mt-4">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
+        <div className="row justify-content-center">
+          <div className="col-10">
             <h1 className="text-light text-center fw-bold">ABOUT</h1>
             <img
               src={underline}
@@ -18,8 +18,8 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col-md-12">
+        <div className="row mt-5 justify-content-center">
+          <div className="col-md-10">
             <h2 className="text-light fw-bold">
               Bonjour, I&apos;m
               <span className="text__gradient"> Sushmita Swain !</span>

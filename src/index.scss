@@ -6,7 +6,12 @@
 @import "./styles/footer.scss";
 @import "./styles/home.scss";
 @import "./styles/bookshelf.scss";
+@import "./styles/story.scss";
+@import "./styles/timeline.scss";
+@import "./styles/work.scss";
+@import "./styles/interactiveFloorPlan.scss";
 
+html,
 body {
   margin: 0;
   font-family: "Bricolage Grotesque", sans-serif !important;
@@ -14,21 +19,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/BG.png");
   background-size: cover;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  overflow-x: hidden !important;
+  object-fit: cover;
 }
 
 .text__gradient {
   background: linear-gradient(
     90deg,
-    #1a7ad3 20%,
-    #b16ce9 27.78%,
-    #e8628e 36.21%,
-    #f4751f 44.9%
+    #1a7ad3 0.05%,
+    #b16ce9 26.31%,
+    #e8628e 63.18%,
+    #f4751f 97.02%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.custom__gray {
+  color: #cdd3e6;
+}
+
+.off__white {
+  color: #ecedee;
+}
+
+.recentproject__cards {
+  border-radius: 1.25rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 30, 22, 0.55) 0%,
+    rgba(44, 28, 50, 0.5) 59.9%
+  ) !important;
 }

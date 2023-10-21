@@ -1,12 +1,14 @@
 import React from "react";
 import profile from "../../assets/profile.png";
+import RecentProject from "./RecentProject";
+import Creative from "./Creative";
 
 const Home = () => {
   return (
     <section className="home__section mt-5 pt-5">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
+        <div className="row justify-content-center">
+          <div className="col-10">
             <img
               src={profile}
               alt="sushmita"
@@ -14,7 +16,7 @@ const Home = () => {
               style={{ width: "140px" }}
             />
           </div>
-          <div className="col-md-12 mt-5">
+          <div className="col-md-10 mt-5">
             <h1 className="fw-bold text-center text-light">
               Bonjour,{" "}
               <span className="text__gradient">I&apos;m Sushmita Swain</span>
@@ -23,7 +25,7 @@ const Home = () => {
               a Creative and Product Designer based in India
             </h2>
           </div>
-          <div className="col-md-12 mt-5">
+          <div className="col-md-10 mt-5">
             <div className="card">
               <div className="card-body">
                 <h5 className="text-center mt-3 text-light">
@@ -43,6 +45,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <RecentProject />
+      <Creative />
     </section>
   );
 };

@@ -4,8 +4,8 @@ const Capabilities = () => {
   return (
     <section className="capabilities__section">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
             <h3 className="text-light text-center fw-bold text-uppercase">
               MY capabilities
             </h3>

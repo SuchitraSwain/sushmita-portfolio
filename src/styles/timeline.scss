@@ -1,0 +1,117 @@
+.timeline__section {
+  p {
+    font-family: "Gelion", sans-serif !important;
+  }
+
+  .card__details {
+    position: relative;
+
+    .card {
+      border-radius: 1rem;
+      background: #1d1c1c;
+
+      .btn {
+        font-size: 0.85rem;
+        border-radius: 40px;
+        font-weight: bold;
+        font-family: "Gelion", sans-serif !important;
+        padding: 2px 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    .dot {
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(6) {
+      .btn {
+        background: linear-gradient(90deg, #def6f9 0.13%, #ecfce5 100.98%);
+        color: #1da272;
+      }
+      .dot {
+        background: #1da272;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      .btn {
+        background: linear-gradient(90deg, #b5f7fb 0.13%, #9ad8f2 100.98%);
+        color: #4252d1;
+      }
+      .dot {
+        background: #4252d1;
+      }
+    }
+    &:nth-child(4),
+    &:nth-child(7) {
+      .btn {
+        background: linear-gradient(90deg, #ffeced 0.13%, #ffe3fc 100.98%);
+        color: #d3383b;
+      }
+      .dot {
+        background: #d3383b;
+      }
+    }
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      .line {
+        position: absolute;
+        top: 5%;
+        left: 23%;
+        img {
+          height: 400px;
+          object-fit: cover;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .line {
+          position: absolute;
+          top: 10px;
+          left: 4px;
+          img {
+            height: 620px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .line {
+        display: none;
+      }
+    }
+  }
+
+  .header {
+    margin-left: -30px;
+    margin-top: 4px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
