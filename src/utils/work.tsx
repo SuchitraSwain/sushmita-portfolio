@@ -25,7 +25,7 @@ const work = [
     imgSrc: onboarding,
     logo: detrackIcon,
     type: "🖥️  Web",
-    link: "/interactive-floor-plans",
+    link: "/onboarding-experience",
     description:
       "A well-crafted onboarding experience to ensures users have a positive first interaction, understand the value of the product, and feel engaged and supported. This, in turn, increases user retention by reducing abandonment.",
   },
@@ -35,7 +35,7 @@ const work = [
     imgSrc: survey,
     logo: kf,
     type: "🖥️  Web",
-    link: "/interactive-floor-plans",
+    link: "/success-profile-survey",
     description:
       "This helping you predict whether your organization’s entire workforce skill sets and mindsets is capable of delivering on its future strategy. Talent assessments illustrate an individual’s current capability and future potential.",
   },
@@ -45,7 +45,7 @@ const work = [
     imgSrc: emergencyPlan,
     logo: geneaIcon,
     type: "🖥️  Web",
-    link: "/interactive-floor-plans",
+    link: "/emergency-plans",
     description:
       "It is a feature used to lockdown specific points of a healthcare facility, school, enterprise or any other location using Genea Access Control. During an emergency lockdown, all specified doors will lock, and credentials will deactivate.",
   },

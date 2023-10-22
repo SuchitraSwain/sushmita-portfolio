@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import linkedin from "../assets/Linkedin.png";
 import behance from "../assets/Behance.png";
 
 const Navbar = () => {
+  const location = useLocation(); // once ready it returns the 'window.location' object
+  const [url, setUrl] = useState("");
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
   return (
     <section className="navbar__section mt-3">
       <div className="container">
@@ -12,35 +17,79 @@ const Navbar = () => {
           <div className="col-md-10">
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid">
-                <Link className="navbar-brand" to="/">
+                <Link
+                  to="/"
+                  className={url === "/work" ? "navbar-brand" : "navbar-brand"}
+                >
                   <img src={logo} alt="logo" className="img-fluid" />
                 </Link>
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
+                <div className="d-flex align-items-center d-md-none">
+                  <div className="soical__media">
+                    <Link
+                      to="https://www.linkedin.com/in/sushmita-swain-8b184a200/"
+                      target="_blank"
+                    >
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="img-fluid me-2"
+                        width={30}
+                      />
+                    </Link>
+
+                    <Link
+                      to="https://www.behance.net/sushmitadesign"
+                      target="_blank"
+                    >
+                      <img
+                        src={behance}
+                        alt="linkedin"
+                        className="img-fluid"
+                        width={30}
+                      />
+                    </Link>
+                  </div>
+                  <button
+                    className="navbar-toggler ms-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+
                 <div
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
+                    <li
+                      className={
+                        url === "/about-us" ? " active nav-item" : "nav-item"
+                      }
+                    >
                       <Link
-                        className="nav-link active text-light"
+                        className="nav-link text-light"
                         aria-current="page"
                         to="about-us"
                       >
                         ABOUT
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      className={
+                        url === "/work" ||
+                        url === "/interactive-floor-plans" ||
+                        url === "/emergency-plans" ||
+                        url === "/success-profile-survey"
+                          ? " active nav-item"
+                          : "nav-item"
+                      }
+                    >
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
@@ -49,7 +98,11 @@ const Navbar = () => {
                         WORK
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      className={
+                        url === "/timeline" ? " active nav-item" : "nav-item"
+                      }
+                    >
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
@@ -58,7 +111,11 @@ const Navbar = () => {
                         TIMELINE
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      className={
+                        url === "/story" ? " active nav-item" : "nav-item"
+                      }
+                    >
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
@@ -67,7 +124,11 @@ const Navbar = () => {
                         STORY
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      className={
+                        url === "/bookshelf" ? " active nav-item" : "nav-item"
+                      }
+                    >
                       <Link
                         className="nav-link text-light"
                         aria-current="page"
@@ -77,20 +138,30 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
+                  <div className="soical__media d-md-block d-none">
+                    <Link
+                      to="https://www.linkedin.com/in/sushmita-swain-8b184a200/"
+                      target="_blank"
+                    >
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="img-fluid me-2"
+                        width={30}
+                      />
+                    </Link>
 
-                  <div className="soical__media">
-                    <img
-                      src={linkedin}
-                      alt="linkedin"
-                      className="img-fluid me-2"
-                      width={30}
-                    />
-                    <img
-                      src={behance}
-                      alt="linkedin"
-                      className="img-fluid"
-                      width={30}
-                    />
+                    <Link
+                      to="https://www.behance.net/sushmitadesign"
+                      target="_blank"
+                    >
+                      <img
+                        src={behance}
+                        alt="linkedin"
+                        className="img-fluid"
+                        width={30}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>

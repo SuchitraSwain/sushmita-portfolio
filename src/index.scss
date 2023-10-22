@@ -10,6 +10,9 @@
 @import "./styles/timeline.scss";
 @import "./styles/work.scss";
 @import "./styles/interactiveFloorPlan.scss";
+@import "./styles/emergencyPlans.scss";
+@import "./styles/successProfileSurvey.scss";
+@import "./styles/deTrack.scss";
 
 html,
 body {
@@ -21,6 +24,8 @@ body {
   background-size: cover;
   overflow-x: hidden !important;
   object-fit: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .text__gradient {

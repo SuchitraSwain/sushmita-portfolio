@@ -4,5 +4,17 @@
     opacity: 60%;
     border-radius: 8px;
     padding: 14px;
+
+    .active {
+      background: linear-gradient(
+        90deg,
+        #1a7ad3 0.05%,
+        #b16ce9 26.31%,
+        #e8628e 63.18%,
+        #f4751f 97.02%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

@@ -11,6 +11,9 @@ import Story from "./pages/Story";
 import Timeline from "./pages/Timeline/Timeline";
 import Work from "./pages/Work/Work";
 import InteractiveFloorPlans from "./pages/CaseStudy/InteractiveFloorPlans";
+import EmergencyPlans from "./pages/CaseStudy/EmergencyPlans";
+import SucessProfileSurvey from "./pages/CaseStudy/SuccessProfileSurvey";
+import DeTrack from "./pages/CaseStudy/DeTrack";
 
 function App() {
   return (
@@ -27,6 +30,12 @@ function App() {
           path="/interactive-floor-plans"
           element={<InteractiveFloorPlans />}
         />
+        <Route path="/emergency-plans" element={<EmergencyPlans />} />
+        <Route
+          path="/success-profile-survey"
+          element={<SucessProfileSurvey />}
+        />
+        <Route path="/onboarding-experience" element={<DeTrack />} />
       </Routes>
       <Footer />
     </BrowserRouter>
