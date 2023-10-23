@@ -18,45 +18,45 @@ function Illustration() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-12 mt-5 pt-md-5">
-            <h3>
+            <h3 className="fw-light">
               I have a passion for creating and engaging in artistic endeavors,
               with a focus on digital illustration. Here are a selection of my
               curated digital illustrations.
             </h3>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-5 pt-4">
           <div className="col-md-12 d-md-flex">
             <div className="row flex-column">
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration1} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration2} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration3} alt="" className="img-fluid w-100" />
               </div>
             </div>
             <div className="row flex-column">
-              <div className="col-md-11 mt-3">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration4} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration5} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration6} alt="" className="img-fluid w-100" />
               </div>
             </div>
             <div className="row flex-column">
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration7} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration8} alt="" className="img-fluid w-100" />
               </div>
-              <div className="col-md-11 mt-3 p-0">
+              <div className="col-md-11 mt-3 p-1">
                 <img src={illustration9} alt="" className="img-fluid w-100" />
               </div>
             </div>

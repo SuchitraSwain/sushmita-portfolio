@@ -3,13 +3,15 @@ import logo from "../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import linkedin from "../assets/Linkedin.png";
 import behance from "../assets/Behance.png";
+import hamburger from "../assets/hamburger.png";
 
 const Navbar = () => {
-  const location = useLocation(); // once ready it returns the 'window.location' object
+  const location = useLocation();
   const [url, setUrl] = useState("");
   useEffect(() => {
     setUrl(location.pathname);
-  }, [location]);
+  }, [location.pathname, url]);
+
   return (
     <section className="navbar__section mt-3">
       <div className="container">
@@ -23,7 +25,7 @@ const Navbar = () => {
                 >
                   <img src={logo} alt="logo" className="img-fluid" />
                 </Link>
-                <div className="d-flex align-items-center d-md-none">
+                <div className="d-flex align-items-center d-md-none justify-content-between">
                   <div className="soical__media">
                     <Link
                       to="https://www.linkedin.com/in/sushmita-swain-8b184a200/"
@@ -49,8 +51,16 @@ const Navbar = () => {
                       />
                     </Link>
                   </div>
+                  <div
+                    style={{
+                      width: "2px",
+                      height: "30px",
+                      background: "rgba(255, 255, 255, 0.15)",
+                      marginLeft: "16px",
+                    }}
+                  ></div>
                   <button
-                    className="navbar-toggler ms-2"
+                    className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -58,7 +68,9 @@ const Navbar = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">
+                      <img src={hamburger} alt="" className="img-fluid" />
+                    </span>
                   </button>
                 </div>
 

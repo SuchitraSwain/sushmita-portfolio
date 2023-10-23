@@ -25,6 +25,8 @@
           #f4751f 95.23%
         );
         padding: 8px 2.5rem;
+        font-weight: bold;
+        color: #fff;
       }
 
       @media only screen and (max-width: 768px) {
@@ -48,9 +50,36 @@
     text-align: center;
   }
 
-  h4 {
-    font-size: 1.5rem;
+  h2 {
+    color: #fff;
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
     text-align: center;
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  p {
+    color: #cdd3e6;
+  }
+
+  h6 {
+    font-family: "Gelion", sans-serif !important;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-family: "Bricolage Grotesque", sans-serif !important;
+    letter-spacing: 1px;
   }
 }
 
@@ -86,6 +115,7 @@
 }
 
 .modal {
+  backdrop-filter: blur(5px);
   .modal-content {
     background-color: #d9d9d9 !important;
   }
@@ -114,12 +144,9 @@
   }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
 .content {
   position: relative;
   width: 100%;
-  max-width: 400px;
   margin: auto;
   overflow: hidden;
   transition: all ease-in-out 0.3s;

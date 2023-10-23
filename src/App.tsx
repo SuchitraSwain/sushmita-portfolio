@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar";
@@ -16,6 +16,11 @@ import SucessProfileSurvey from "./pages/CaseStudy/SuccessProfileSurvey";
 import DeTrack from "./pages/CaseStudy/DeTrack";
 
 function App() {
+  useEffect(() => {
+    window.scroll(0, 0);
+    console.log(window.scroll(0, 0));
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

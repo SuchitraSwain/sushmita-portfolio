@@ -18,7 +18,7 @@ const Bookshelf = () => {
             />
           </div>
           <div className="col-md-12 text-center mt-5 pt-5">
-            <h3>Below are some of the books I&apos;ve enjoyed reading</h3>
+            <h3 className="fw-light">Below are some of the books I&apos;ve enjoyed reading</h3>
           </div>
           <div className="col-md-12 mt-5 pt-5">
             <img

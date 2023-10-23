@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bannerImage from "../../assets/bannerImage2.png";
 import competitive from "../../assets/competitive2.png";
 import userPersona from "../../assets/userPersona2.png";
@@ -11,12 +11,18 @@ import successSurveyBg from "../../assets/successSurveyBg.png";
 import designSystem from "../../assets/designSystem2.png";
 
 const SuccessProfileSurvey = () => {
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <section className="survey__section mt-5 pt-5">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10">
-            <h1 className="text-light text-center fw-bold">
+            <h1
+              className="text-light text-center fw-bold"
+              style={{ letterSpacing: "1px" }}
+            >
               Success Profile Survey
             </h1>
             <p className="text-light text-center">
@@ -28,11 +34,11 @@ const SuccessProfileSurvey = () => {
           <div className="col-md-10">
             <div className="row justify-content-center align-items-center mt-5">
               <div className="col-md-6">
-                <p className="p__white mb-0 fw-bold">Assessment & Succession</p>
-                <h1 className="fw-bold text-light">
-                  Emergency Lockdown and Door Exemption Plans
-                </h1>
-                <p className="p__gray">
+                <p className="p__white mb-0 fw-light">
+                  Assessment & Succession
+                </p>
+                <h1 className="fw-bold text-light">Success Profile</h1>
+                <p className="p__gray mt-4">
                   A success profile is a tool or framework used to define the
                   skills, competencies, behaviors, and characteristics that
                   contribute to success in a particular role or within an
@@ -108,7 +114,7 @@ const SuccessProfileSurvey = () => {
                           collaborative work on success profiles. Currently,
                           there is no efficient way to review and edit success
                           profiles by aggregating feedback from all
-                          participants. Need to work on interactive dashboard to
+                          stakeholders. Need to work on interactive dashboard to
                           see all stakeholder responses.
                         </p>
                       </div>
@@ -225,7 +231,7 @@ const SuccessProfileSurvey = () => {
               </div>
               <div className="col-md-8">
                 <p className="p__gray">
-                  During my research we went through the Mckinsey & company
+                  During my research I went through the Mckinsey & company
                   survey, which also help business leaders to understand best
                   practices, compare their companies’ ways of working and
                   performance with a global benchmark, and make informed and
@@ -268,7 +274,7 @@ const SuccessProfileSurvey = () => {
                         <div className="d-flex align-items-center justify-content-md-start justify-content-center">
                           <h3>Kristin Watson</h3>{" "}
                           <p className="p__gray mx-2 mb-1">
-                            - Security Manager
+                            - Talent Management Professional
                           </p>
                         </div>
                         <div className="row mt-2 text-md-start text-center">
@@ -357,7 +363,7 @@ const SuccessProfileSurvey = () => {
               <div className="col-md-8">
                 <p className="p__gray">
                   Let's begin by examining the user's path to achieving their
-                  goal and making the most of the emergency plans feature.
+                  goal and making the most of the edit success profile.
                 </p>
               </div>
               <div className="col-md-12 mt-5">
@@ -493,7 +499,7 @@ const SuccessProfileSurvey = () => {
               <div className="col-md-12">
                 <div className="row mt-5">
                   <div className="col-md-4">
-                    <h3>Benefits of Emergency Lockdown Plans</h3>
+                    <h3>Benefits of collaborative Success profile survey</h3>
                   </div>
                   <div className="col-md-8">
                     <p className="p__gray mb-0">
@@ -549,29 +555,34 @@ const SuccessProfileSurvey = () => {
                       🤝 Executing Design-to-Development Handoff
                     </p>
                     <p className="p__gray">
-                      This project provided me with important experience in
-                      preparing materials for development in a customer-facing
-                      setting. I created a PDF guide with notes on how to build
-                      different components, maintained precise visual details in
-                      my Figma design file, and organized assets with proper
-                      names. This guide significantly expedited the page
-                      localization process for the global market, allowing for a
-                      swift page launch.
+                      In the collaborative world of success profile surveys, I
+                      played a pivotal role in making the design-to-development
+                      transition seamless. I put together a comprehensive guide
+                      that not only provided clear instructions for the
+                      development team on how to build different survey
+                      components but also ensured that the visual integrity of
+                      our design files was meticulously maintained.
+                      Additionally, I took great care in organizing our digital
+                      assets with clear labels, which significantly accelerated
+                      the survey's adaptation to suit the needs of diverse user
+                      groups. This collaborative endeavour allowed us to quickly
+                      launch our survey on a global scale, keeping us
+                      consistently ahead in the decision-making process.
                     </p>
                     <p className="p__white fw-bold mt-5">
                       🌟 Practice Makes Perfect!
                     </p>
                     <p className="p__gray">
-                      As I worked on this feature, I improved my design quality
-                      by regularly asking for input from colleagues and people
-                      involved in the project. I gained valuable experience by
-                      presenting my designs at various meetings, learning to
-                      have open discussions, and understanding when to stand
-                      firm on design choices with input from project
-                      stakeholders. This process also highlighted the importance
-                      of clear communication within the team, especially when
-                      asking questions to address issues and manage tight
-                      project deadlines.
+                      Delving deeper into this project, I honed my research
+                      skills and elevated my ability to assess the user
+                      experience of various products. Collaborating with fellow
+                      designers allowed me to exchange ideas and further develop
+                      my skills. While I encountered mistakes along the way,
+                      each misstep served as a valuable lesson, guiding me
+                      towards more effective methods. This project instilled in
+                      me the art of embracing feedback with a positive attitude
+                      and presenting my designs and research with a newfound
+                      professionalism.
                     </p>
                   </div>
                 </div>

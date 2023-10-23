@@ -34,7 +34,7 @@ const Work = () => {
                   aria-controls="case__studies"
                   aria-selected="true"
                 >
-                  CaseStudies
+                  Case Studies
                 </button>
               </li>
               <li className="nav-item" role="presentation">

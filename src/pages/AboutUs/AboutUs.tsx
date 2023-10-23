@@ -20,15 +20,15 @@ const AboutUs = () => {
         </div>
         <div className="row mt-5 justify-content-center">
           <div className="col-md-10">
-            <h2 className="text-light fw-bold">
+            <h2 className="text-light fw-bold mb-1">
               Bonjour, I&apos;m
               <span className="text__gradient"> Sushmita Swain !</span>
             </h2>
-            <p className="sub__para">
+            <p className="sub__para fw-light">
               Currently working in KornFerry as UX Researcher Consultant.
             </p>
 
-            <p className="para">
+            <p className="para mt-5">
               As a designer I’ve spent the last 4 years crafting interfaces &
               consumer experiences for tech and product companies. I have a
               strong appreciation for simplicity and I enjoy tackling problems

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bannerImage from "../../assets/emergencyBanner.png";
 import { Link } from "react-router-dom";
 import useCaseIcon1 from "../../assets/useCaseIcon1.png";
@@ -15,8 +15,12 @@ import feature9 from "../../assets/feature9.png";
 import designSystem from "../../assets/designSystem1.png";
 import mobileApp from "../../assets/mobileApp.png";
 import mobileApp1 from "../../assets/mobileApp1.png";
+import emergencyPlanGif from "../../assets/emergencyPlanGif.gif";
 
 const EmergencyPlans = () => {
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
   const casesArray = [
     {
       icon: useCaseIcon1,
@@ -144,7 +148,7 @@ const EmergencyPlans = () => {
                   solutions that protect. That’s why we believe door access
                   control should be customizable. With Custom Emergency Lockdown
                   Plans administrators can create unique rules to keep doors
-                  open or locked in emergency situations
+                  open or locked in emergency situations.
                 </p>
               </div>
 
@@ -331,11 +335,10 @@ const EmergencyPlans = () => {
               </div>
               <div className="col-md-8">
                 <p className="p__gray">
-                  As Genea is a cloud-based access control platform, which
-                  mostly target to IT specialist at a national enterprise or
-                  Property manager/Security manager/Administrators of a
-                  commercial real estate portfolio., efficient security
-                  management is crucial.
+                  As it is a cloud-based access control platform, which mostly
+                  target to IT specialist at a national enterprise or Property
+                  manager/Security manager/Administrators of a commercial real
+                  estate portfolio., efficient security management is crucial.
                 </p>
               </div>
               <div className="col-md-12 mt-5">
@@ -595,7 +598,11 @@ const EmergencyPlans = () => {
                 </p>
               </div>
               <div className="col-md-4 offset-md-1">
-                <img src={mobileApp} alt="" className="img-fluid w-100" />
+                <img
+                  src={emergencyPlanGif}
+                  alt=""
+                  className="img-fluid w-100"
+                />
               </div>
 
               <div className="col-md-12 mt-5 pt-md-5">

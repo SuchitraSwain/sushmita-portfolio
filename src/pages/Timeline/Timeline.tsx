@@ -15,6 +15,9 @@ import cheylesmoreTimeline from "../../assets/cheylesmoreTimeline.png";
 import brainTechIcon from "../../assets/brainTechLogo.png";
 import brainTechTimeline from "../../assets/brainTechTimeline.png";
 import line from "../../assets/line.png";
+import downloadPDF from "../../assets/download.png";
+import pdf from "../../assets/Sushmita.pdf";
+import { Link } from "react-router-dom";
 
 const Timeline = () => {
   const timelineList = [
@@ -96,7 +99,7 @@ const Timeline = () => {
     <section className="timeline__section pt-5 mt-4">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-10">
+          <div className="col-md-10">
             <h1 className="text-light text-center fw-bold">TIMELINE</h1>
             <img
               src={underline}
@@ -143,9 +146,9 @@ const Timeline = () => {
                             <h2 className="mb-0 off__white fw-bold">
                               {timeline.title}
                             </h2>
-                            <p className="custom__gray mt-1">
+                            <small className="custom__gray mt-1">
                               {timeline.subTitle}
-                            </p>
+                            </small>
                           </div>
                         </div>
                         <div className="row mt-4 align-items-start">
@@ -155,11 +158,11 @@ const Timeline = () => {
                             </p>
                             <p className="text-light">{timeline.describe}</p>
                           </div>
-                          <div className="col-md-4 d-flex justify-content-md-end justify-content-start">
+                          <div className="col-md-4 d-flex justify-content-md-end justify-content-start pe-md-0">
                             <img
                               src={timeline.img}
                               alt=""
-                              className="img-fluid timeline__img"
+                              className="img-fluid timeline__img w-100"
                             />
                           </div>
                         </div>
@@ -169,6 +172,19 @@ const Timeline = () => {
                 </div>
               </>
             ))}
+          </div>
+        </div>
+
+        <div className="row justify-content-center mt-5 pt-5">
+          <div className="col-md-10 ">
+            <Link to={pdf} target="_blank">
+              <img
+                src={downloadPDF}
+                alt=""
+                className="img-fluid d-block mx-auto"
+                width={300}
+              />
+            </Link>
           </div>
         </div>
       </div>

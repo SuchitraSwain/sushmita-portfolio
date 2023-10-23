@@ -11,9 +11,9 @@ const MyValues = () => {
             </h3>
           </div>
         </div>
-        <div className="row mt-4 justify-content-center">
+        <div className="row mt-4 justify-content-center flex-wrap">
           <div className="col-md-5 mt-4">
-            <div className="card list__1">
+            <div className="card list__1 h-100">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">💛 Passion is everything.</h4>
                 <p className="text-dark mt-3">
@@ -26,7 +26,7 @@ const MyValues = () => {
             </div>
           </div>
           <div className="col-md-5 mt-4">
-            <div className="card list__2">
+            <div className="card list__2 h-100">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">✍️ Never stop learning.</h4>
                 <p className="text-dark mt-3">
@@ -39,7 +39,7 @@ const MyValues = () => {
             </div>
           </div>
           <div className="col-md-5 mt-4">
-            <div className="card list__3">
+            <div className="card list__3 h-100">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">✊ Embrace the journey.</h4>
                 <p className="text-dark mt-3">
@@ -51,7 +51,7 @@ const MyValues = () => {
             </div>
           </div>
           <div className="col-md-5 mt-4">
-            <div className="card list__4">
+            <div className="card list__4 h-100">
               <div className="card-body">
                 <h4 className="text-dark fw-bold">🙂 Be human.</h4>
                 <p className="text-dark mt-3">

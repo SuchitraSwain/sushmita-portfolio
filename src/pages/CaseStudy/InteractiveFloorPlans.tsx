@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bannerImage from "../../assets/floorPlan1.png";
 import { Link } from "react-router-dom";
 import competitive from "../../assets/competitive.png";
@@ -13,9 +13,12 @@ import functionImage1 from "../../assets/function1.png";
 import designSystem from "../../assets/designSystem.png";
 import interactiveBg from "../../assets/interactiveBg1.png";
 import userPersona from "../../assets/userPersona.png";
-import floorBg from "../../assets/floorBg.png";
+import geneaLaptopGif from "../../assets/Genealaptop.gif";
 
 const InteractiveFloorPlans = () => {
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
   const benefits = [
     {
       title: "Troubleshooting Access Control",
@@ -55,7 +58,10 @@ const InteractiveFloorPlans = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10">
-            <h1 className="text-light text-center fw-bold">
+            <h1
+              className="text-light text-center fw-bold"
+              style={{ letterSpacing: "1px" }}
+            >
               Interactive Floor Plans
             </h1>
             <p className="text-light text-center">
@@ -69,26 +75,31 @@ const InteractiveFloorPlans = () => {
           <div className="col-md-10">
             <div className="row justify-content-center align-items-center">
               <div className="col-md-6">
-                <p>Visualize Your Security</p>
+                <p className="mb-0">Visualize Your Security</p>
                 <h1 className="fw-bold text-light">
                   Interactive Floor Plans for Access Control
                 </h1>
-                <p>
-                  Interactive Floor Plans from Genea gives you the ability to
-                  oversee, organize and interact with your entire access control
-                  system right from a graphical map. Upload your floor plans,
-                  place cameras, add door icons and begin. With a single click,
-                  IT and security teams can respond more efficiently to
-                  emergencies and view security video from anywhere in their
-                  facility. Take your cloud-based security to the next level
-                  with Interactive Floor Plans.
+                <p className="mt-3">
+                  Interactive Floor Plans gives you the ability to oversee,
+                  organize and interact with your entire access control system
+                  right from a graphical map. Upload your floor plans, place
+                  cameras, add door icons and begin. With a single click, IT and
+                  security teams can respond more efficiently to emergencies and
+                  view security video from anywhere in their facility. Take your
+                  cloud-based security to the next level with Interactive Floor
+                  Plans.
                 </p>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 position-relative">
                 <img
                   src={bannerImage}
                   alt=""
-                  className="img-fluid w-100 d-block mx-auto"
+                  className="img-fluid w-100 d-block mx-auto position-relative"
+                />
+                <img
+                  src={geneaLaptopGif}
+                  alt=""
+                  className="img-fluid interactve__banner__gif"
                 />
               </div>
             </div>
@@ -673,30 +684,30 @@ const InteractiveFloorPlans = () => {
                   🤝 Executing Design-to-Development Handoff
                 </p>
                 <p className="p__gray">
-                  This project gave me valuable experience in handing off
-                  deliverables for development in a consumer-facing environment.
-                  I made a PDF guide with development notes detailing the
-                  component types and usage, ensured pixel perfection within
-                  organized layers in my final Figma file, and exported all
-                  assets with correct naming conventions. This guide helped the
-                  developers quickly localize the page for the global market and
-                  launch the page as fast as possible.
+                  I created a comprehensive design specification document that
+                  includes all design assets, such as high-fidelity mockups,
+                  style guides, and interactive prototypes. This document
+                  outlines the user interface elements, interactions, and user
+                  flows, ensuring a clear understanding of the design intent.
+                  Additionally, I organized a meeting with the development team
+                  to walk them through the designs, answer any questions, and
+                  provide ongoing support throughout the implementation phase.
+                  This collaborative approach helps facilitate a smooth
+                  transition from design to development, ensuring that the final
+                  product aligns with the design vision.
                 </p>
                 <p className="p__white fw-bold mt-5">
                   🌟 Practice Makes Perfect!
                 </p>
                 <p className="p__gray">
-                  Throughout my time of working on this feature, I learned to
-                  consistently elevate the quality of my designs by soliciting
-                  feedback from peers and stakeholders through formal design
-                  reviews and presentations. It was a tremendous growth
-                  experience to pitch and present my designs at numerous
-                  reviews, practice guiding open conversations and sharing my
-                  point of view, and learn from my mentors when to pushback on
-                  stakeholder feedback. I learned how essential maintaining good
-                  communication is with my team, especially when asking
-                  clarifying questions to remove blockers and balance pressing
-                  deadlines.
+                  Working as a designer, I've learned that practice is the key
+                  to perfection. I've realized the importance of iterative
+                  design, where feedback and user insights play a crucial role
+                  in refining the user experience. Open communication and
+                  collaboration with colleagues and stakeholders are essential
+                  for successful design projects. Additionally, embracing
+                  mistakes as opportunities for improvement has been a valuable
+                  lesson, ultimately contributing to my growth as a designer.
                 </p>
               </div>
             </div>

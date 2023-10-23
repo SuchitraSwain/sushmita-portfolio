@@ -1,9 +1,8 @@
 .navbar__section {
   .navbar {
-    background-color: #000000;
-    opacity: 60%;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
-    padding: 14px;
+    padding: 16px;
 
     .active {
       background: linear-gradient(
@@ -13,6 +12,7 @@
         #e8628e 63.18%,
         #f4751f 97.02%
       );
+      font-weight: bolder;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

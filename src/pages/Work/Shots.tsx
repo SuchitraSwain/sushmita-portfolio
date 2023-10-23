@@ -15,7 +15,7 @@ function Shots() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-12 mt-5 pt-md-5">
-            <h3>
+            <h3 className="fw-light">
               Exploring diverse layout techniques and experimenting with color
               palettes are invaluable means to enhance visual aesthetics and
               stimulate creative expression. Presented below are a curated
@@ -28,21 +28,13 @@ function Shots() {
             <div className="col-md-6 mt-5 " key={shot.name}>
               <div className="content">
                 <div className="content-overlay"></div>
-                <img
-                  src={shot.logo}
-                  alt=""
-                  className="img-fluid w-100"
-                  // onClick={() => {
-                  //   setImages(shot.images);
-                  //   setShow(true);
-                  // }}
-                />
+                <img src={shot.logo} alt="" className="img-fluid w-100" />
                 <div className="content-details fadeIn-bottom">
                   <h3
                     className="content-title"
                     onClick={() => {
                       setImages(shot.images);
-                      setModalTitle(shot.name)
+                      setModalTitle(shot.name);
                       setShow(true);
                     }}
                   >
@@ -68,7 +60,14 @@ function Shots() {
           </div>
         </div>
 
-        {show && <WorkModal show={show} onHide={handleClose} images={images} name={modalTitle} />}
+        {show && (
+          <WorkModal
+            show={show}
+            onHide={handleClose}
+            images={images}
+            name={modalTitle}
+          />
+        )}
       </div>
     </section>
   );

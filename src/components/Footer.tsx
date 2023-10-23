@@ -31,20 +31,20 @@ const Footer = () => {
                     <span className="text__gradient">Today</span>
                   </h1>
                 </div>
-                <div className="col-md-5 mt-4">
+                <div className="col-md-6 mt-4">
                   <h4 className="text-light text-center">
                     I&apos;m always love hearing new ideas and I&apos;m more
                     than happy to chat
                   </h4>
-                  <h4 className="text__gradient mt-4 mb-5 d-flex align-items-center justify-content-center">
+                  <h5 className="text__gradient mt-4 mb-5 d-flex align-items-center justify-content-center mb-0">
                     <img
                       src={email}
                       alt=""
                       className="img-fluid mx-2"
-                      width={30}
+                      width={26}
                     />
                     sushmitaswain806@gmail.com
-                  </h4>
+                  </h5>
                 </div>
               </div>
             </footer>

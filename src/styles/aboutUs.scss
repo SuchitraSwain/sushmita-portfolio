@@ -1,15 +1,18 @@
 .aboutus__section {
+  h2 {
+    letter-spacing: 1px;
+  }
   .sub__para {
     color: #cdd3e6;
     font-size: 1.25rem;
   }
 
   .para {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #fff;
     font-family: "Gelion", sans-serif !important;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     &:last-child {
       font-weight: normal;
       color: #cdd3e6;
@@ -45,6 +48,10 @@
 }
 
 .myvalue__section {
+  h4 {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
   h3 {
     color: #fff;
     font-family: "Gelion", sans-serif !important;
@@ -56,6 +63,7 @@
 
     p {
       font-family: "Gelion", sans-serif !important;
+      font-weight: 400;
     }
   }
   .list__1 {

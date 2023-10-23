@@ -11,8 +11,8 @@ const WorkModal = (props: {
   const { show, onHide, images, interaction, name } = props;
   return (
     <Modal show={show} onHide={onHide} backdrop="static" centered size="lg">
-      <Modal.Header closeButton className="border-0">
-        <Modal.Title>{name}</Modal.Title>
+      <Modal.Header closeButton className="border-0 pt-4">
+        <Modal.Title className="fw-bold">{name}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {images && (

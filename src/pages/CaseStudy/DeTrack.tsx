@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bannerImage from "../../assets/bannerImage3.png";
 import competitive from "../../assets/competitive3.png";
 import userPersona from "../../assets/userPersona3.png";
@@ -6,8 +6,14 @@ import userJourney from "../../assets/userJourney3.png";
 import strategy from "../../assets/strategy.png";
 import strategy1 from "../../assets/strategy1.png";
 import designSystem from "../../assets/designSystem3.png";
+import ScrollToTop from "react-scroll-to-top";
+import { useNavigate } from "react-router-dom";
 
 const DeTrack = () => {
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <section className="onboarding__section mt-5 pt-5">
       <div className="container">
@@ -25,17 +31,17 @@ const DeTrack = () => {
           <div className="col-md-10">
             <div className="row justify-content-center align-items-center mt-5">
               <div className="col-md-6">
-                <p className="p__white mb-0 fw-bold">Assessment & Succession</p>
+                <p className="p__white mb-0 fw-light">
+                  Maximize Profits. Automate Your Last Mile
+                </p>
                 <h1 className="fw-bold text-light">
-                  Emergency Lockdown and Door Exemption Plans
+                  Detrack Management Systems
                 </h1>
                 <p className="p__gray">
-                  A success profile is a tool or framework used to define the
-                  skills, competencies, behaviors, and characteristics that
-                  contribute to success in a particular role or within an
-                  organization. It provides a clear outline of the expectations
-                  and requirements for individuals to perform effectively and
-                  achieve desired outcomes.
+                  Delivery management software that is powerful and easy-to-use,
+                  and effective for real-time delivery notifications, real-time
+                  proof of delivery, and vehicle tracking at an affordable
+                  price.
                 </p>
               </div>
               <div className="col-md-6">
@@ -136,8 +142,8 @@ const DeTrack = () => {
                           sign-up process and to enhance user retention and
                           engagement, I implemented a two-pronged approach:
                           <ul style={{ listStyle: "number" }}>
-                            <li>Progressive Profiling Strategy</li>
-                            <li> Guided Onboarding</li>
+                            <li>Step-by-Step Wizard/Registration Wizard</li>
+                            <li>Guided Onboarding</li>
                           </ul>
                         </p>
                       </div>
@@ -182,19 +188,21 @@ const DeTrack = () => {
               </div>
               <div className="row mt-5">
                 <div className="col-md-4">
-                  <h3 className="mb-0">
-                    What is Progressive Profiling Strategy?
-                  </h3>
+                  <h3 className="mb-0">What is Step-by-Step Wizard?</h3>
                 </div>
                 <div className="col-md-8">
+                  <p className="p__gray mb-0">
+                    A "Step-by-Step Wizard" in a sign-up form is a user
+                    interface design pattern that breaks down a lengthy or
+                    complex registration process into a series of smaller, more
+                    manageable steps. It's a structured approach to guiding
+                    users through the sign-up or registration process, making it
+                    easier and less overwhelming
+                  </p>
                   <p className="p__gray">
-                    Optimized the experience by introducing a progressive
-                    profiling strategy. Instead of overwhelming users with a
-                    lengthy form upfront, the system now requests essential
-                    information during initial registration. As users engage
-                    with the platform over time, additional details are
-                    collected progressively, reducing friction and enhancing the
-                    onboarding experience.
+                    Gathering essential information upfront can streamline the
+                    onboarding process by customizing it based on the data
+                    collected.
                   </p>
                 </div>
               </div>

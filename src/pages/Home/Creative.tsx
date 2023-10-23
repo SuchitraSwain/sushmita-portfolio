@@ -5,6 +5,7 @@ import kornFerry from "../../assets/kornferry.png";
 import cheylesmore from "../../assets/cheylesmore.png";
 import localPocket from "../../assets/localpocket.png";
 import buildryt from "../../assets/buildryt.png";
+import { Link } from "react-router-dom";
 
 const Creative = () => {
   return (
@@ -19,34 +20,54 @@ const Creative = () => {
           <div className="col-md-10 mt-5 creative__logo">
             <div className="row align-items-center">
               <div className="col-md-2">
-                <img src={genea} alt="genea" className="img-fluid img__custome" />
+                <Link to="https://www.getgenea.com/" target="_blank">
+                  <img
+                    src={genea}
+                    alt="genea"
+                    className="img-fluid img__custome"
+                  />
+                </Link>
               </div>
               <div className="col-md-2">
-                <img src={detrack} alt="detrack" className="img-fluid img__custome" />
+                <Link to="https://www.detrack.com/" target="_blank">
+                  <img
+                    src={detrack}
+                    alt="detrack"
+                    className="img-fluid img__custome"
+                  />
+                </Link>
               </div>
               <div className="col-md-2">
-                <img src={kornFerry} alt="kornFerry" className="img-fluid" />
+                <Link to="https://www.kornferry.com/" target="_blank">
+                  <img src={kornFerry} alt="kornFerry" className="img-fluid" />
+                </Link>
               </div>
               <div className="col-md-2">
-                <img
-                  src={cheylesmore}
-                  alt="cheylesmore"
-                  className="img-fluid"
-                />
+                <Link to="https://www.cheylesmore.com/" target="_blank">
+                  <img
+                    src={cheylesmore}
+                    alt="cheylesmore"
+                    className="img-fluid"
+                  />
+                </Link>
               </div>
               <div className="col-md-2">
-                <img
-                  src={localPocket}
-                  alt="localPocket"
-                  className="img-fluid"
-                />
+                <Link to="https://localpocket.com/" target="_blank">
+                  <img
+                    src={localPocket}
+                    alt="localPocket"
+                    className="img-fluid"
+                  />
+                </Link>
               </div>
               <div className="col-md-2">
-                <img
-                  src={buildryt}
-                  alt="buildryt"
-                  className="img-fluid img__custome"
-                />
+                <Link to="https://www.buildryt.com/" target="_blank">
+                  <img
+                    src={buildryt}
+                    alt="buildryt"
+                    className="img-fluid img__custome"
+                  />
+                </Link>
               </div>
             </div>
           </div>
