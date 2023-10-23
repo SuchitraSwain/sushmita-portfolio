@@ -23,26 +23,28 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/bookshelf" element={<Bookshelf />} />
-        <Route path="/story" element={<Story />} />
-        <Route path="/timeline" element={<Timeline />} />
-        <Route path="/work" element={<Work />} />
-        <Route
-          path="/interactive-floor-plans"
-          element={<InteractiveFloorPlans />}
-        />
-        <Route path="/emergency-plans" element={<EmergencyPlans />} />
-        <Route
-          path="/success-profile-survey"
-          element={<SucessProfileSurvey />}
-        />
-        <Route path="/onboarding-experience" element={<DeTrack />} />
-      </Routes>
-      <Footer />
+      <main>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/bookshelf" element={<Bookshelf />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/work" element={<Work />} />
+          <Route
+            path="/interactive-floor-plans"
+            element={<InteractiveFloorPlans />}
+          />
+          <Route path="/emergency-plans" element={<EmergencyPlans />} />
+          <Route
+            path="/success-profile-survey"
+            element={<SucessProfileSurvey />}
+          />
+          <Route path="/onboarding-experience" element={<DeTrack />} />
+        </Routes>
+        <Footer />
+      </main>
     </BrowserRouter>
   );
 }

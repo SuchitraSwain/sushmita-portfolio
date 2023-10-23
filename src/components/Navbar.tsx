@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [location.pathname, url]);
 
   return (
-    <section className="navbar__section mt-3">
+    <section className="navbar__section pt-md-5 pt-4">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">

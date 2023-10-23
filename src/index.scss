@@ -20,13 +20,31 @@ body {
   font-family: "Bricolage Grotesque", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/BG.png");
-  background-size: cover;
-  overflow-x: hidden !important;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
   letter-spacing: 1;
+}
+
+body {
+  background: rgba(0, 0, 0, 1) !important;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: -100;
+  background-image: url("./assets/header-gradient.svg"),
+    url("/assets/footer-gradient.svg");
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom;
+  background-size: 1400px;
 }
 
 .text__gradient {
