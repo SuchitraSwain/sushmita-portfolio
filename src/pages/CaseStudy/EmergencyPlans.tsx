@@ -13,14 +13,19 @@ import feature7 from "../../assets/feature7.png";
 import feature8 from "../../assets/feature8.png";
 import feature9 from "../../assets/feature9.png";
 import designSystem from "../../assets/designSystem1.png";
-import mobileApp from "../../assets/mobileApp.png";
 import mobileApp1 from "../../assets/mobileApp1.png";
 import emergencyPlanGif from "../../assets/emergencyPlanGif.gif";
+import ScrollToTop from "react-scroll-to-top";
 
 const EmergencyPlans = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
+
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
+
   const casesArray = [
     {
       icon: useCaseIcon1,
@@ -709,6 +714,7 @@ const EmergencyPlans = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop onClick={scrollToTop} />
     </section>
   );
 };

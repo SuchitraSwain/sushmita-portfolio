@@ -21,7 +21,7 @@ function CaseStudies() {
                 <div className="col-md-6 mt-4" key={list.title}>
                   <div className="card recentproject__cards">
                     <div className="card-body p-0">
-                      <div className="row mt-3 align-items-baseline py-2 px-4">
+                      <div className="row mt-3 align-items-center py-2 px-4">
                         <div className="col-6">
                           <img src={list.logo} alt="img-fluid" width={60} />
                         </div>
@@ -58,7 +58,7 @@ function CaseStudies() {
                       <img
                         src={list.imgSrc}
                         alt=""
-                        className="img-fluid mt-5"
+                        className="img-fluid mt-5 card__border__bottom"
                       />
                     </div>
                   </div>
@@ -89,7 +89,7 @@ function CaseStudies() {
             <div className="col-md-6 mt-4" key={list.title}>
               <div className="card recentproject__cards">
                 <div className="card-body p-0">
-                  <div className="row mt-3 align-items-baseline py-2 px-4">
+                  <div className="row mt-3 align-items-center py-2 px-4">
                     <div className="col-6">
                       <img src={list.logo} alt="img-fluid" width={60} />
                     </div>
@@ -119,7 +119,11 @@ function CaseStudies() {
                     </span>
                   </Link>
 
-                  <img src={list.imgSrc} alt="" className="img-fluid mt-4" />
+                  <img
+                    src={list.imgSrc}
+                    alt=""
+                    className="img-fluid mt-4 card__border__bottom"
+                  />
                 </div>
               </div>
             </div>

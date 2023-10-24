@@ -41,7 +41,7 @@ const oldWork = [
     type: "📱 Mobile",
     link: "https://www.behance.net/gallery/123450543/My-Ride",
     description:
-      "Our carpooling app concept is designed to simplify and enhance the experience of joining others for trips, making travel more efficient and eco-friendly. By connecting travelers with similar destinations,",
+      "Our carpooling app concept is designed to simplify and enhance the experience of joining others for trips, making travel more efficient and eco-friendly, by connecting travellers with similar destinations.",
   },
 ];
 

@@ -14,11 +14,16 @@ import designSystem from "../../assets/designSystem.png";
 import interactiveBg from "../../assets/interactiveBg1.png";
 import userPersona from "../../assets/userPersona.png";
 import geneaLaptopGif from "../../assets/Genealaptop.gif";
+import ScrollToTop from "react-scroll-to-top";
 
 const InteractiveFloorPlans = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
+
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   const benefits = [
     {
       title: "Troubleshooting Access Control",
@@ -109,7 +114,7 @@ const InteractiveFloorPlans = () => {
       <div className="container mt-5 second__container">
         <div className="row justify-content-center">
           <div className="col-md-10">
-            <div className="row second__section mt-5 text-md-start text-center">
+            <div className="row second__section text-md-start text-center">
               <div className="col-md-3">
                 <h4 className="fw-bold ">Role</h4>
                 <p>Product Designer</p>
@@ -714,6 +719,8 @@ const InteractiveFloorPlans = () => {
           </div>
         </div>
       </div>
+
+      <ScrollToTop onClick={scrollToTop} />
     </section>
   );
 };

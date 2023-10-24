@@ -9,11 +9,17 @@ import assesment from "../../assets/assesment.png";
 import dashboard from "../../assets/dashboard.png";
 import successSurveyBg from "../../assets/successSurveyBg.png";
 import designSystem from "../../assets/designSystem2.png";
+import ScrollToTop from "react-scroll-to-top";
 
 const SuccessProfileSurvey = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
+
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <section className="survey__section mt-5 pt-5">
       <div className="container">
@@ -55,6 +61,10 @@ const SuccessProfileSurvey = () => {
                 />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-10">
             <div className="row second__section mt-5 text-md-start text-center mt-5 pt-5">
               <div className="col-md-3">
                 <h4 className="fw-bold">Role</h4>
@@ -590,8 +600,9 @@ const SuccessProfileSurvey = () => {
             </div>
           </div>
         </div>
-        <hr />
       </div>
+
+      <ScrollToTop onClick={scrollToTop} />
     </section>
   );
 };
